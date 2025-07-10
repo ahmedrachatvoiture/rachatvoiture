@@ -13,6 +13,7 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
+  			'ahmed-blue': '#2e338c',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
