@@ -24,8 +24,23 @@ import {
   Gem,
 } from "lucide-react"
 import InteractiveMap from "@/components/map"
+import { useIsMobile } from "@/hooks/use-mobile"
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
 
 export default function CarDealershipPage() {
+  const isMobile = useIsMobile()
+  const [isAlertOpen, setIsAlertOpen] = useState(false)
+
   const [formData, setFormData] = useState({
     nom: "",
     prenom: "",
@@ -872,9 +887,33 @@ Message envoyé depuis le site web AUTO EXPERT`
               </p>
 
               <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
-                <Button className="bg-ahmed-blue hover:bg-ahmed-blue/90 text-white text-sm sm:text-base lg:text-lg px-4 sm:px-6 py-2 sm:py-3 font-semibold">
-                  📞 0477 03 06 90
-                </Button>
+                {isMobile ? (
+                  <a href="tel:+32471386125">
+                    <Button className="bg-ahmed-blue hover:bg-ahmed-blue/90 text-white text-sm sm:text-base lg:text-lg px-4 sm:px-6 py-2 sm:py-3 font-semibold w-full">
+                      Appellez-nous
+                    </Button>
+                  </a>
+                ) : (
+                  <AlertDialog open={isAlertOpen} onOpenChange={setIsAlertOpen}>
+                    <AlertDialogTrigger asChild>
+                      <Button className="bg-ahmed-blue hover:bg-ahmed-blue/90 text-white text-sm sm:text-base lg:text-lg px-4 sm:px-6 py-2 sm:py-3 font-semibold w-full">
+                        Appellez-nous
+                      </Button>
+                    </AlertDialogTrigger>
+                    <AlertDialogContent>
+                      <AlertDialogHeader>
+                        <AlertDialogTitle>Appeler ce numéro</AlertDialogTitle>
+                        <AlertDialogDescription>
+                          Pour nous appeler, veuillez composer le numéro suivant sur votre téléphone :{" "}
+                          <strong>+32 471 38 61 25</strong>
+                        </AlertDialogDescription>
+                      </AlertDialogHeader>
+                      <AlertDialogFooter>
+                        <AlertDialogCancel>Fermer</AlertDialogCancel>
+                      </AlertDialogFooter>
+                    </AlertDialogContent>
+                  </AlertDialog>
+                )}
                 <Button
                   onClick={scrollToForm}
                   className="bg-white text-ahmed-blue hover:bg-gray-100 border border-ahmed-blue text-sm sm:text-base lg:text-lg px-4 sm:px-6 py-2 sm:py-3 font-semibold"
