@@ -26,6 +26,8 @@ export default function CarDealershipPage() {
     message: "",
   })
 
+  const currentYear = new Date().getFullYear()
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
       ...formData,
@@ -37,29 +39,29 @@ export default function CarDealershipPage() {
     e.preventDefault()
 
     // Formatage amélioré du message WhatsApp
-    const message = `🚗 *NOUVELLE DEMANDE DE CONTACT* 🚗
+    const message = `NOUVELLE DEMANDE DE CONTACT
 
-👤 *INFORMATIONS PERSONNELLES*
-• Nom : ${formData.nom}
-• Prénom : ${formData.prenom}
-• Email : ${formData.email}
-• Téléphone : ${formData.telephone}
+INFORMATIONS PERSONNELLES
+- Nom : ${formData.nom}
+- Prénom : ${formData.prenom}
+- Email : ${formData.email}
+- Téléphone : ${formData.telephone}
 
-🔍 *VÉHICULE RECHERCHÉ*
-• Marque : ${formData.marque || "Non spécifiée"}
-• Modèle : ${formData.modele || "Non spécifié"}
-• Année : ${formData.annee || "Non spécifiée"}
-• Kilométrage : ${formData.kilometrage || "Non spécifiée"}
-• Énergie : ${formData.energie || "Non spécifiée"}
-• État : ${formData.etat || "Non spécifiée"}
+VÉHICULE RECHERCHÉ
+- Marque : ${formData.marque || "Non spécifiée"}
+- Modèle : ${formData.modele || "Non spécifié"}
+- Année : ${formData.annee || "Non spécifiée"}
+- Kilométrage : ${formData.kilometrage || "Non spécifié"}
+- Énergie : ${formData.energie || "Non spécifiée"}
+- État : ${formData.etat || "Non spécifié"}
 
-💰 *BUDGET*
-• Budget souhaité : ${formData.budget || "Non spécifié"}
+BUDGET
+- Budget souhaité : ${formData.budget || "Non spécifié"}
 
-💬 *MESSAGE COMPLÉMENTAIRE*
+MESSAGE COMPLÉMENTAIRE
 ${formData.message || "Aucun message supplémentaire"}
 
-📝 *Note importante :*
+Note importante :
 Les photos du véhicule peuvent être envoyées séparément via WhatsApp après cette première prise de contact.
 
 ---
@@ -332,8 +334,8 @@ Message envoyé depuis le site web AUTO EXPERT`
                     name="annee"
                     placeholder="Année"
                     type="number"
-                    min="1990"
-                    max="2024"
+                    min="1980"
+                    max={currentYear.toString()}
                     value={formData.annee}
                     onChange={handleInputChange}
                     className="border-gray-300 focus:border-emerald-500 focus:ring-emerald-500 text-sm sm:text-base"
