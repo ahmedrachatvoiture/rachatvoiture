@@ -13,7 +13,10 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
-  			'ahmed-blue': '#2e338c',
+  			'ahmed-blue': '#0d4f78',
+  			'ahmed-blue-light': '#e7f0f7',
+  			'whatsapp-green': '#25D366',
+  			'whatsapp-green-dark': '#128C7E',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

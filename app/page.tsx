@@ -131,9 +131,10 @@ Message envoyé depuis le site web AUTO EXPERT`
       {/* WhatsApp Button */}
       <button
         onClick={openWhatsApp}
-        className="fixed bottom-6 right-6 z-50 bg-ahmed-blue hover:bg-ahmed-blue/90 text-white p-4 rounded-full shadow-lg transition-colors"
+        className="fixed bottom-6 right-6 z-50 bg-whatsapp-green hover:bg-whatsapp-green-dark text-white font-semibold py-2 px-4 rounded-full shadow-lg transition-colors flex items-center"
       >
         <MessageCircle className="w-6 h-6" />
+        <span className="hidden sm:inline sm:ml-2">Contactez-nous</span>
       </button>
 
       {/* Navigation */}
@@ -483,7 +484,7 @@ Message envoyé depuis le site web AUTO EXPERT`
               </ul>
             </div>
             <div className="bg-blue-50 p-8 rounded-lg shadow-inner border border-blue-100">
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 text-center">�� Notre promesse</h3>
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 text-center">✨ Notre promesse</h3>
               <p className="text-center text-lg sm:text-xl font-semibold text-ahmed-blue">
                 👉 Un clic, une offre, c’est direct.
               </p>
@@ -611,7 +612,7 @@ Message envoyé depuis le site web AUTO EXPERT`
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-12 sm:py-16 bg-white">
+      {/* <section id="services" className="py-12 sm:py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-gray-800">
@@ -664,7 +665,7 @@ Message envoyé depuis le site web AUTO EXPERT`
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Engagements Section */}
       <section id="engagements" className="py-12 sm:py-16 bg-gray-50">
@@ -753,7 +754,7 @@ Message envoyé depuis le site web AUTO EXPERT`
       {/* Vendre ma voiture */}
       <section className="py-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[400px] sm:min-h-[600px]">
-          <div className="bg-blue-50 flex items-center p-6 sm:p-8 lg:p-12 order-2 lg:order-1">
+          <div className="bg-ahmed-blue-light flex items-center p-6 sm:p-8 lg:p-12 order-2 lg:order-1">
             <div className="max-w-lg mx-auto lg:mx-0">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 text-gray-800">
                 Vendre ma voiture
@@ -828,7 +829,7 @@ Message envoyé depuis le site web AUTO EXPERT`
               className="object-cover"
             />
           </div>
-          <div className="bg-blue-50 flex items-center p-6 sm:p-8 lg:p-12 order-2">
+          <div className="bg-ahmed-blue-light flex items-center p-6 sm:p-8 lg:p-12 order-2">
             <div className="max-w-lg mx-auto lg:mx-0">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 text-gray-800">
                 Rachat de voiture
@@ -929,7 +930,7 @@ Message envoyé depuis le site web AUTO EXPERT`
       {/* Rachat de voiture en panne */}
       <section className="py-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[400px] sm:min-h-[600px]">
-          <div className="bg-blue-50 flex items-center p-6 sm:p-8 lg:p-12 order-2 lg:order-1">
+          <div className="bg-ahmed-blue-light flex items-center p-6 sm:p-8 lg:p-12 order-2 lg:order-1">
             <div className="max-w-lg mx-auto lg:mx-0">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 text-gray-800">
                 Rachat de voiture en panne
