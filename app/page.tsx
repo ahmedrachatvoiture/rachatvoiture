@@ -49,9 +49,9 @@ export default function CarDealershipPage() {
 • Marque : ${formData.marque || "Non spécifiée"}
 • Modèle : ${formData.modele || "Non spécifié"}
 • Année : ${formData.annee || "Non spécifiée"}
-• Kilométrage : ${formData.kilometrage || "Non spécifié"}
+• Kilométrage : ${formData.kilometrage || "Non spécifiée"}
 • Énergie : ${formData.energie || "Non spécifiée"}
-• État : ${formData.etat || "Non spécifié"}
+• État : ${formData.etat || "Non spécifiée"}
 
 💰 *BUDGET*
 • Budget souhaité : ${formData.budget || "Non spécifié"}
@@ -215,7 +215,7 @@ Message envoyé depuis le site web AUTO EXPERT`
       </nav>
 
       {/* Hero Section */}
-      <section id="accueil" className="relative min-h-screen flex items-center pt-16 px-4 sm:px-0">
+      <section id="accueil" className="relative min-h-screen flex items-center pt-16 pb-8 sm:pb-0 px-4 sm:px-0">
         <div className="absolute inset-0">
           <Image
             src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80"
@@ -238,7 +238,7 @@ Message envoyé depuis le site web AUTO EXPERT`
               </p>
               <Button
                 onClick={scrollToForm}
-                className="bg-amber-500 hover:bg-amber-600 text-white text-base sm:text-lg px-6 sm:px-8 py-2 sm:py-3 font-semibold w-full sm:w-auto"
+                className="bg-amber-500 hover:bg-amber-600 text-white text-base sm:text-lg px-6 sm:px-8 py-2 sm:py-3 font-semibold w-full sm:w-auto mb-8 sm:mb-0"
               >
                 DÉCOUVRIR
               </Button>
