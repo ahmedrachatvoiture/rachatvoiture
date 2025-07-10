@@ -151,20 +151,20 @@ Message envoyé depuis le site web AUTO EXPERT`
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-6">
-            <a href="#accueil" className="hover:text-gray-300 transition-colors font-medium text-white">
+          <div className="hidden md:flex space-x-8">
+            <a href="#accueil" className="hover:text-gray-300 transition-colors font-heading font-medium text-white">
               ACCUEIL
             </a>
-            <a href="#vehicules" className="hover:text-gray-300 transition-colors font-medium text-white">
+            <a href="#vehicules" className="hover:text-gray-300 transition-colors font-heading font-medium text-white">
               VÉHICULES
             </a>
-            <a href="#services" className="hover:text-gray-300 transition-colors font-medium text-white">
+            <a href="#services" className="hover:text-gray-300 transition-colors font-heading font-medium text-white">
               SERVICES
             </a>
-            <a href="#occasion" className="hover:text-gray-300 transition-colors font-medium text-white">
+            <a href="#occasion" className="hover:text-gray-300 transition-colors font-heading font-medium text-white">
               OCCASION
             </a>
-            <a href="#contact" className="hover:text-gray-300 transition-colors font-medium text-white">
+            <a href="#contact" className="hover:text-gray-300 transition-colors font-heading font-medium text-white">
               À PROPOS
             </a>
           </div>
@@ -493,119 +493,122 @@ Message envoyé depuis le site web AUTO EXPERT`
         </div>
       </section>
 
-      {/* Vehicle Purchase Types */}
-      <section id="vehicules" className="py-12 sm:py-16 bg-blue-50">
+      {/* Categories Section */}
+      <section id="vehicules" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-gray-800">
-              Les véhicules que nous achetons
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8">
-            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 border-t-4 border-ahmed-blue">
-              <div className="relative h-64">
-                <Image
-                  src="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
-                  alt="Rachat voiture bon état"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-ahmed-blue bg-opacity-60 flex flex-col justify-end p-4 text-white">
-                  <h3 className="font-bold text-lg mb-2">RACHAT DE VOITURE EN BON ÉTAT</h3>
-                  <p className="text-sm mb-3">Jackpot! demandez votre estimation!</p>
-                  <Button
-                    onClick={scrollToForm}
-                    className="bg-white text-ahmed-blue hover:bg-gray-100 text-xs font-semibold"
-                  >
-                    ESTIMER MA VOITURE
-                  </Button>
+          <h2 className="text-4xl font-bold text-center mb-10 text-gray-800">Les véhicules que nous achetons</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            <Card className="overflow-hidden shadow-lg transition-transform hover:scale-105 bg-white border-2 border-gray-200 hover:border-ahmed-blue flex flex-col">
+              <CardContent className="p-0 flex flex-col flex-grow">
+                <div className="relative h-56">
+                  <Image
+                    src="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="Voiture en bon état"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/50 flex items-center justify-center p-4">
+                    <h3 className="text-white text-xl font-semibold text-center">RACHAT DE VOITURE EN BON ÉTAT</h3>
+                  </div>
                 </div>
-              </div>
+                <div className="p-6 bg-white flex-grow">
+                  <p className="text-gray-700 text-base">
+                    Votre voiture est en parfait état ? C'est une excellente nouvelle ! Obtenez une offre
+                    exceptionnelle et une vente rapide. Nous valorisons votre entretien et vous proposons le meilleur
+                    prix du marché.
+                  </p>
+                </div>
+              </CardContent>
             </Card>
-
-            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 border-t-4 border-ahmed-blue">
-              <div className="relative h-64">
-                <Image
-                  src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
-                  alt="Rachat voiture en panne"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-ahmed-blue bg-opacity-60 flex flex-col justify-end p-4 text-white">
-                  <h3 className="font-bold text-lg mb-2">RACHAT DE VOITURE EN PANNE OU BEAUCOUP DE KM</h3>
-                  <p className="text-sm mb-3">Pas de souci! on reprend votre auto</p>
-                  <Button
-                    onClick={scrollToForm}
-                    className="bg-white text-ahmed-blue hover:bg-gray-100 text-xs font-semibold"
-                  >
-                    ESTIMER MA VOITURE
-                  </Button>
+            <Card className="overflow-hidden shadow-lg transition-transform hover:scale-105 bg-white border-2 border-gray-200 hover:border-ahmed-blue flex flex-col">
+              <CardContent className="p-0 flex flex-col flex-grow">
+                <div className="relative h-56">
+                  <Image
+                    src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    alt="Voiture en panne"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/50 flex items-center justify-center p-4">
+                    <h3 className="text-white text-xl font-semibold text-center">
+                      RACHAT DE VOITURE EN PANNE OU BEAUCOUP DE KM
+                    </h3>
+                  </div>
                 </div>
-              </div>
+                <div className="p-6 bg-white flex-grow">
+                  <p className="text-gray-700 text-base">
+                    Un moteur fatigué ou un compteur qui a fait le tour du monde ? Votre voiture a encore de la valeur
+                    pour nous. Nous l'évaluons et nous déplaçons pour la récupérer, sans tracas.
+                  </p>
+                </div>
+              </CardContent>
             </Card>
-
-            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 border-t-4 border-ahmed-blue">
-              <div className="relative h-64">
-                <Image
-                  src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
-                  alt="Rachat voiture sans contrôle"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-ahmed-blue bg-opacity-60 flex flex-col justify-end p-4 text-white">
-                  <h3 className="font-bold text-lg mb-2">RACHAT DE VOITURE SANS CONTRÔLE TECHNIQUE</h3>
-                  <p className="text-sm mb-3">Nous rachetons votre voiture en l'état</p>
-                  <Button
-                    onClick={scrollToForm}
-                    className="bg-white text-ahmed-blue hover:bg-gray-100 text-xs font-semibold"
-                  >
-                    ESTIMER MA VOITURE
-                  </Button>
+            <Card className="overflow-hidden shadow-lg transition-transform hover:scale-105 bg-white border-2 border-gray-200 hover:border-ahmed-blue flex flex-col">
+              <CardContent className="p-0 flex flex-col flex-grow">
+                <div className="relative h-56">
+                  <Image
+                    src="/images/ct-voiture-rachat-belgique.jpg"
+                    alt="Voiture sans contrôle technique"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/50 flex items-center justify-center p-4">
+                    <h3 className="text-white text-xl font-semibold text-center">
+                      RACHAT DE VOITURE SANS CONTRÔLE TECHNIQUE
+                    </h3>
+                  </div>
                 </div>
-              </div>
+                <div className="p-6 bg-white flex-grow">
+                  <p className="text-gray-700 text-base">
+                    Le contrôle technique est refusé ou périmé ? Évitez les frais et les tracas des réparations. Nous
+                    achetons votre véhicule en l'état, simplement et sans complications.
+                  </p>
+                </div>
+              </CardContent>
             </Card>
-
-            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 border-t-4 border-ahmed-blue">
-              <div className="relative h-64">
-                <Image
-                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
-                  alt="Rachat voiture accidentée"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-ahmed-blue bg-opacity-60 flex flex-col justify-end p-4 text-white">
-                  <h3 className="font-bold text-lg mb-2">RACHAT DE VOITURE ACCIDENTÉE</h3>
-                  <p className="text-sm mb-3">On vous débarrasse de votre voiture accidentée</p>
-                  <Button
-                    onClick={scrollToForm}
-                    className="bg-white text-ahmed-blue hover:bg-gray-100 text-xs font-semibold"
-                  >
-                    ESTIMER MA VOITURE
-                  </Button>
+            <Card className="overflow-hidden shadow-lg transition-transform hover:scale-105 bg-white border-2 border-gray-200 hover:border-ahmed-blue flex flex-col">
+              <CardContent className="p-0 flex flex-col flex-grow">
+                <div className="relative h-56">
+                  <Image
+                    src="/images/voiture-accident-rachat-voiture-belgique.jpg"
+                    alt="Voiture accidentée"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/50 flex items-center justify-center p-4">
+                    <h3 className="text-white text-xl font-semibold text-center">RACHAT DE VOITURE ACCIDENTÉE</h3>
+                  </div>
                 </div>
-              </div>
+                <div className="p-6 bg-white flex-grow">
+                  <p className="text-gray-700 text-base">
+                    Même accidentée, votre voiture n'est pas bonne pour la casse. Nous vous aidons à tourner la page
+                    en vous proposant un rachat juste et rapide, peu importe l'étendue des dégâts.
+                  </p>
+                </div>
+              </CardContent>
             </Card>
-
-            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 border-t-4 border-ahmed-blue">
-              <div className="relative h-64">
-                <Image
-                  src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
-                  alt="Rachat utilitaires"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-ahmed-blue bg-opacity-60 flex flex-col justify-end p-4 text-white">
-                  <h3 className="font-bold text-lg mb-2">RACHAT DE VOITURES UTILITAIRES & CAMIONNETTES</h3>
-                  <p className="text-sm mb-3">Rachat de véhicules utilitaires au meilleur prix</p>
-                  <Button
-                    onClick={scrollToForm}
-                    className="bg-white text-ahmed-blue hover:bg-gray-100 text-xs font-semibold"
-                  >
-                    ESTIMER MON UTILITAIRE
-                  </Button>
+            <Card className="overflow-hidden shadow-lg transition-transform hover:scale-105 bg-white border-2 border-gray-200 hover:border-ahmed-blue flex flex-col">
+              <CardContent className="p-0 flex flex-col flex-grow">
+                <div className="relative h-56">
+                  <Image
+                    src="/images/camion-rachat-voiture-belgique.png"
+                    alt="Camionnette"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/50 flex items-center justify-center p-4">
+                    <h3 className="text-white text-xl font-semibold text-center">
+                      RACHAT DE VOITURES UTILITAIRES & CAMIONNETTES
+                    </h3>
+                  </div>
                 </div>
-              </div>
+                <div className="p-6 bg-white flex-grow">
+                  <p className="text-gray-700 text-base">
+                    Vous renouvelez votre flotte professionnelle ? Nous rachetons vos utilitaires, camionnettes et
+                    véhicules de société au meilleur prix. Un service efficace pour les pros.
+                  </p>
+                </div>
+              </CardContent>
             </Card>
           </div>
         </div>
@@ -740,7 +743,7 @@ Message envoyé depuis le site web AUTO EXPERT`
             </div>
             <div className="relative h-96">
               <Image
-                src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+                src="/images/voiture-vw-rachat-voiture-belgique.jpg"
                 alt="Voiture d'occasion"
                 fill
                 className="object-cover rounded-lg"
@@ -809,7 +812,7 @@ Message envoyé depuis le site web AUTO EXPERT`
           </div>
           <div className="relative min-h-[300px] sm:min-h-[400px] lg:min-h-[600px] order-1 lg:order-2">
             <Image
-              src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+              src="/images/peugeot-rachat-belgique.png"
               alt="Voiture moderne noire"
               fill
               className="object-cover"
@@ -823,7 +826,7 @@ Message envoyé depuis le site web AUTO EXPERT`
         <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[400px] sm:min-h-[600px]">
           <div className="relative min-h-[300px] sm:min-h-[400px] lg:min-h-[600px] order-1">
             <Image
-              src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+              src="/images/voiture-vw-rachat-voiture-belgique.jpg"
               alt="Voiture sportive orange dans showroom"
               fill
               className="object-cover"
@@ -834,50 +837,50 @@ Message envoyé depuis le site web AUTO EXPERT`
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 text-gray-800">
                 Rachat de voiture
               </h2>
-              <p className="text-sm sm:text-base text-gray-700 mb-3 sm:mb-4">
+              <p className="text-base sm:text-lg text-gray-700 mb-3 sm:mb-4">
                 Nous proposons un service de <strong>rachat de votre voiture</strong> à un prix correct, quel que soit
                 le modèle, la marque ou l'année de votre véhicule, nous sommes prêts à l'acheter pour vous simplifier la
                 vie.
               </p>
-              <p className="text-sm sm:text-base text-gray-700 mb-3 sm:mb-4">
+              <p className="text-base sm:text-lg text-gray-700 mb-3 sm:mb-4">
                 Notre point fort ? Nous <strong>achetons votre véhicule</strong> peut importe son état, la marque, le
                 modèle ou l'année, votre véhicule a de la valeur. Même en panne ou accidentée.
               </p>
-              <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6">
+              <p className="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6">
                 Vendez-nous votre voiture en toute simplicité, et sans contraintes !
               </p>
 
               <div className="space-y-2 mb-4 sm:mb-6">
                 <div className="flex items-center space-x-2">
                   <span className="text-ahmed-blue text-lg flex-shrink-0">✓</span>
-                  <span className="text-sm sm:text-base text-gray-700">
+                  <span className="text-base sm:text-lg text-gray-700">
                     Déplacement gratuit sous 24 à votre domicile.
                   </span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <span className="text-ahmed-blue text-lg flex-shrink-0">✓</span>
-                  <span className="text-sm sm:text-base text-gray-700">
+                  <span className="text-base sm:text-lg text-gray-700">
                     Nous proposons un meilleur prix que les garages et concessionnaires
                   </span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <span className="text-ahmed-blue text-lg flex-shrink-0">✓</span>
-                  <span className="text-sm sm:text-base text-gray-700">
+                  <span className="text-base sm:text-lg text-gray-700">
                     Notre service est entièrement gratuit et sans engagement.
                   </span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <span className="text-ahmed-blue text-lg flex-shrink-0">✓</span>
-                  <span className="text-sm sm:text-base text-gray-700">Paiement sécurisé immédiat</span>
+                  <span className="text-base sm:text-lg text-gray-700">Paiement sécurisé immédiat</span>
                 </div>
               </div>
 
-              <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6">
+              <p className="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6">
                 Si vous souhaitez <strong>vendre votre voiture</strong> rapidement, appelez-nous pour un service rapide
                 et efficace.
               </p>
 
-              <p className="text-sm sm:text-base text-gray-700 mb-6 sm:mb-8">
+              <p className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8">
                 Nous <strong>rachetons toutes types de véhicules</strong> tel que :{" "}
                 <strong>
                   Citadine, monospaces, SUV, Camionnette, 4X4, Coupé, Pick Up, Berline, Break, Cabriolet, Utilitaire,
@@ -890,14 +893,14 @@ Message envoyé depuis le site web AUTO EXPERT`
               <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
                 {isMobile ? (
                   <a href="tel:+32471386125">
-                    <Button className="bg-ahmed-blue hover:bg-ahmed-blue/90 text-white text-sm sm:text-base lg:text-lg px-4 sm:px-6 py-2 sm:py-3 font-semibold w-full">
+                    <Button className="bg-ahmed-blue hover:bg-ahmed-blue/90 text-white text-base sm:text-lg lg:text-xl px-4 sm:px-6 py-2 sm:py-3 font-semibold w-full">
                       Appellez-nous
                     </Button>
                   </a>
                 ) : (
                   <AlertDialog open={isAlertOpen} onOpenChange={setIsAlertOpen}>
                     <AlertDialogTrigger asChild>
-                      <Button className="bg-ahmed-blue hover:bg-ahmed-blue/90 text-white text-sm sm:text-base lg:text-lg px-4 sm:px-6 py-2 sm:py-3 font-semibold w-full">
+                      <Button className="bg-ahmed-blue hover:bg-ahmed-blue/90 text-white text-base sm:text-lg lg:text-xl px-4 sm:px-6 py-2 sm:py-3 font-semibold w-full">
                         Appellez-nous
                       </Button>
                     </AlertDialogTrigger>
@@ -917,7 +920,7 @@ Message envoyé depuis le site web AUTO EXPERT`
                 )}
                 <Button
                   onClick={scrollToForm}
-                  className="bg-white text-ahmed-blue hover:bg-gray-100 border border-ahmed-blue text-sm sm:text-base lg:text-lg px-4 sm:px-6 py-2 sm:py-3 font-semibold"
+                  className="bg-white text-ahmed-blue hover:bg-gray-100 border border-ahmed-blue text-base sm:text-lg lg:text-xl px-4 sm:px-6 py-2 sm:py-3 font-semibold"
                 >
                   ESTIMER MA VOITURE →
                 </Button>
@@ -935,7 +938,7 @@ Message envoyé depuis le site web AUTO EXPERT`
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 text-gray-800">
                 Rachat de voiture en panne
               </h2>
-              <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6">
+              <p className="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6">
                 Vous avez une voiture en panne, accidentée ou qui ne démarre plus ?
                 <br />
                 Chez Rachat Voiture Direct, nous rachetons aussi les véhicules hors d’usage, rapidement et en toute
@@ -945,25 +948,25 @@ Message envoyé depuis le site web AUTO EXPERT`
               <div className="space-y-2 mb-4 sm:mb-6">
                 <div className="flex items-center space-x-2">
                   <span className="text-ahmed-blue text-lg flex-shrink-0">✔</span>
-                  <span className="text-sm sm:text-base text-gray-700">Évaluation gratuite</span>
+                  <span className="text-base sm:text-lg text-gray-700">Évaluation gratuite</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <span className="text-ahmed-blue text-lg flex-shrink-0">✔</span>
-                  <span className="text-sm sm:text-base text-gray-700">Offre immédiate</span>
+                  <span className="text-base sm:text-lg text-gray-700">Offre immédiate</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <span className="text-ahmed-blue text-lg flex-shrink-0">✔</span>
-                  <span className="text-sm sm:text-base text-gray-700">Paiement sécurisé</span>
+                  <span className="text-base sm:text-lg text-gray-700">Paiement sécurisé</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <span className="text-ahmed-blue text-lg flex-shrink-0">✔</span>
-                  <span className="text-sm sm:text-base text-gray-700">
+                  <span className="text-base sm:text-lg text-gray-700">
                     Enlèvement possible partout en Belgique
                   </span>
                 </div>
               </div>
 
-              <p className="text-sm sm:text-base text-gray-700 mb-6 sm:mb-8">
+              <p className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8">
                 Ne laissez plus votre voiture immobilisée : vendez-la au meilleur prix, sans stress ni tracas !
               </p>
             </div>
@@ -990,21 +993,21 @@ Message envoyé depuis le site web AUTO EXPERT`
                   <MapPin className="w-6 h-6 text-ahmed-blue" />
                   <div>
                     <h4 className="font-bold text-gray-800">Adresse</h4>
-                    <p className="text-gray-600">123 Avenue des Voitures, 1000 Bruxelles, Belgique</p>
+                    <p className="text-gray-600 text-lg">123 Avenue des Voitures, 1000 Bruxelles, Belgique</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
                   <Phone className="w-6 h-6 text-ahmed-blue" />
                   <div>
                     <h4 className="font-bold text-gray-800">Téléphone</h4>
-                    <p className="text-gray-600">+32 471 38 61 25</p>
+                    <p className="text-gray-600 text-lg">+32 471 38 61 25</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
                   <Mail className="w-6 h-6 text-ahmed-blue" />
                   <div>
                     <h4 className="font-bold text-gray-800">Email</h4>
-                    <p className="text-gray-600">contact@autoexpert.be</p>
+                    <p className="text-gray-600 text-lg">contact@autoexpert.be</p>
                   </div>
                 </div>
               </div>
@@ -1023,13 +1026,13 @@ Message envoyé depuis le site web AUTO EXPERT`
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             <div>
               <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">AUTO EXPERT</h3>
-              <p className="text-sm sm:text-base text-gray-200">
+              <p className="text-base sm:text-lg text-gray-200">
                 Votre partenaire de confiance pour l'achat et la vente de véhicules en Belgique.
               </p>
             </div>
             <div>
               <h4 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">Services</h4>
-              <ul className="space-y-1 sm:space-y-2 text-sm sm:text-base text-gray-200">
+              <ul className="space-y-1 sm:space-y-2 text-base sm:text-lg text-gray-200">
                 <li>Vente de véhicules neufs</li>
                 <li>Vente de véhicules d'occasion</li>
                 <li>Rachat de voitures</li>
@@ -1038,7 +1041,7 @@ Message envoyé depuis le site web AUTO EXPERT`
             </div>
             <div>
               <h4 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">Marques</h4>
-              <ul className="space-y-1 sm:space-y-2 text-sm sm:text-base text-gray-200">
+              <ul className="space-y-1 sm:space-y-2 text-base sm:text-lg text-gray-200">
                 <li>BMW</li>
                 <li>Audi</li>
                 <li>Mercedes-Benz</li>
@@ -1047,7 +1050,7 @@ Message envoyé depuis le site web AUTO EXPERT`
             </div>
             <div>
               <h4 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">Contact</h4>
-              <ul className="space-y-1 sm:space-y-2 text-sm sm:text-base text-gray-200">
+              <ul className="space-y-1 sm:space-y-2 text-base sm:text-lg text-gray-200">
                 <li>+32 471 38 61 25</li>
                 <li>contact@autoexpert.be</li>
                 <li>Bruxelles, Belgique</li>
@@ -1055,7 +1058,7 @@ Message envoyé depuis le site web AUTO EXPERT`
             </div>
           </div>
 
-          <div className="border-t border-gray-500 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-sm sm:text-base text-gray-200">
+          <div className="border-t border-gray-500 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-base sm:text-lg text-gray-200">
             <p>&copy; 2025 Auto Expert. Tous droits réservés.</p>
           </div>
         </div>
