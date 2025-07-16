@@ -988,33 +988,33 @@ Message envoyé depuis le site web Rachat Voiture Direct`
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-4xl font-bold mb-8 text-gray-800">Nous contacter</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-800">Nous contacter</h2>
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
                   <MapPin className="w-6 h-6 text-ahmed-blue" />
                   <div>
                     <h4 className="font-bold text-gray-800">Adresse</h4>
-                    <p className="text-gray-600 text-2xl">Chaussée de Waterloo 200/8, 1640 Rhode-Saint-Genèse, Belgique</p>
+                    <p className="text-gray-600 text-lg md:text-2xl">Chaussée de Waterloo 200/8, 1640 Rhode-Saint-Genèse, Belgique</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
                   <Phone className="w-6 h-6 text-ahmed-blue" />
                   <div>
                     <h4 className="font-bold text-gray-800">Téléphone</h4>
-                    <p className="text-gray-600 text-2xl">+32 471 38 61 25</p>
+                    <p className="text-gray-600 text-lg md:text-2xl">+32 471 38 61 25</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
                   <Mail className="w-6 h-6 text-ahmed-blue" />
                   <div>
                     <h4 className="font-bold text-gray-800">Email</h4>
-                    <p className="text-gray-600 text-2xl">r.linecars187@gmail.com</p>
+                    <p className="text-gray-600 text-lg md:text-2xl">r.linecars187@gmail.com</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="h-96 rounded-lg overflow-hidden shadow-lg border-2 border-ahmed-blue/20">
+            <div className="h-80 md:h-96 rounded-lg overflow-hidden shadow-lg border-2 border-ahmed-blue/20">
               <InteractiveMap />
             </div>
           </div>
