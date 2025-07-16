@@ -458,10 +458,10 @@ Message envoyé depuis le site web AUTO EXPERT`
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-gray-800">📌 Qui sommes-nous ?</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="prose lg:prose-lg max-w-none">
+            <div className="prose lg:prose-lg max-w-none font-heading text-lg font-bold">
               <p>
                 Chez Rachat Voiture Direct, notre mission est simple : vous permettre de vendre votre voiture
-                rapidement, en toute confiance et sans complications, partout en Belgique. 🔐
+                rapidement, en toute confiance et sans complications, partout en Belgique.
               </p>
               <p>
                 Depuis notre création en 2020, nous sommes spécialisés dans le rachat immédiat de véhicules d’occasion,
@@ -512,7 +512,7 @@ Message envoyé depuis le site web AUTO EXPERT`
                   </div>
                 </div>
                 <div className="p-6 bg-white flex-grow">
-                  <p className="text-gray-700 text-base">
+                  <p className="text-gray-700 text-base font-semibold">
                     Votre voiture est en parfait état ? C'est une excellente nouvelle ! Obtenez une offre
                     exceptionnelle et une vente rapide. Nous valorisons votre entretien et vous proposons le meilleur
                     prix du marché.
@@ -536,7 +536,7 @@ Message envoyé depuis le site web AUTO EXPERT`
                   </div>
                 </div>
                 <div className="p-6 bg-white flex-grow">
-                  <p className="text-gray-700 text-base">
+                  <p className="text-gray-700 text-base font-semibold">
                     Un moteur fatigué ou un compteur qui a fait le tour du monde ? Votre voiture a encore de la valeur
                     pour nous. Nous l'évaluons et nous déplaçons pour la récupérer, sans tracas.
                   </p>
@@ -559,7 +559,7 @@ Message envoyé depuis le site web AUTO EXPERT`
                   </div>
                 </div>
                 <div className="p-6 bg-white flex-grow">
-                  <p className="text-gray-700 text-base">
+                  <p className="text-gray-700 text-base font-semibold">
                     Le contrôle technique est refusé ou périmé ? Évitez les frais et les tracas des réparations. Nous
                     achetons votre véhicule en l'état, simplement et sans complications.
                   </p>
@@ -580,7 +580,7 @@ Message envoyé depuis le site web AUTO EXPERT`
                   </div>
                 </div>
                 <div className="p-6 bg-white flex-grow">
-                  <p className="text-gray-700 text-base">
+                  <p className="text-gray-700 text-base font-semibold">
                     Même accidentée, votre voiture n'est pas bonne pour la casse. Nous vous aidons à tourner la page
                     en vous proposant un rachat juste et rapide, peu importe l'étendue des dégâts.
                   </p>
@@ -603,7 +603,7 @@ Message envoyé depuis le site web AUTO EXPERT`
                   </div>
                 </div>
                 <div className="p-6 bg-white flex-grow">
-                  <p className="text-gray-700 text-base">
+                  <p className="text-gray-700 text-base font-semibold">
                     Vous renouvelez votre flotte professionnelle ? Nous rachetons vos utilitaires, camionnettes et
                     véhicules de société au meilleur prix. Un service efficace pour les pros.
                   </p>
@@ -731,14 +731,14 @@ Message envoyé depuis le site web AUTO EXPERT`
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold mb-6">RACHAT DE VOITURES D'OCCASION</h2>
-              <p className="text-lg mb-8">
+              <p className="text-2xl md:text-3xl mb-8">
                 Nous rachetons votre véhicule au meilleur prix du marché. Évaluation gratuite et paiement immédiat.
               </p>
               <Button
                 onClick={scrollToForm}
                 className="bg-white text-ahmed-blue hover:bg-gray-100 text-lg px-8 py-3 font-semibold"
               >
-                VENDRE MA VOITURE
+                ESTIMER MA VOITURE
               </Button>
             </div>
             <div className="relative h-96">
