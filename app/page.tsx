@@ -484,8 +484,8 @@ Message envoyé depuis le site web AUTO EXPERT`
               </ul>
             </div>
             <div className="bg-blue-50 p-8 rounded-lg shadow-inner border border-blue-100">
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 text-center">✨ Notre promesse</h3>
-              <p className="text-center text-lg sm:text-xl font-semibold text-ahmed-blue">
+              <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4 text-center">✨ Notre promesse</h3>
+              <p className="text-center text-xl sm:text-2xl font-semibold text-ahmed-blue">
                 👉 Un clic, une offre, c’est direct.
               </p>
             </div>
