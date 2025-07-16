@@ -592,7 +592,7 @@ Message envoyé depuis le site web Rachat Voiture Direct`
               <CardContent className="p-0 flex flex-col flex-grow">
                 <div className="relative h-56">
                   <Image
-                    src="/images/camion-rachat-voiture-belgique.png"
+                    src="/images/camionette-rachat-belgique-voiture.png"
                     alt="Camionnette"
                     fill
                     className="object-cover"
@@ -813,8 +813,8 @@ Message envoyé depuis le site web Rachat Voiture Direct`
           </div>
           <div className="relative min-h-[300px] sm:min-h-[400px] lg:min-h-[600px] order-1 lg:order-2">
             <Image
-              src="/images/peugeot-rachat-belgique.jpg"
-              alt="Voiture moderne noire"
+              src="/images/clefs-vendre-ma-voiture-belgique.jpg"
+              alt="Clefs de voiture"
               fill
               className="object-cover"
             />
