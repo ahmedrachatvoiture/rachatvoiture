@@ -95,7 +95,7 @@ Note importante :
 Les photos du véhicule peuvent être envoyées séparément via WhatsApp après cette première prise de contact.
 
 ---
-Message envoyé depuis le site web AUTO EXPERT`
+Message envoyé depuis le site web Rachat Voiture Direct`
 
     const whatsappUrl = `https://wa.me/32471386125?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, "_blank")
@@ -141,7 +141,8 @@ Message envoyé depuis le site web AUTO EXPERT`
       <nav className="bg-ahmed-blue text-white py-4 sticky top-0 z-40 shadow-lg">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center space-x-3">
-            <div className="text-xl font-bold text-white">AUTO EXPERT</div>
+            <div className="text-xl font-bold text-white">RACHAT VOITURE DIRECT</div>
+            {/* <Image src="/images/logo.jpeg" alt="Rachat Voiture Direct" width={100} height={100} /> */}
             {/* Belgian Flag */}
             <div className="w-6 h-4 flex border border-gray-300">
               <div className="w-1/3 h-full bg-black"></div>
@@ -570,7 +571,7 @@ Message envoyé depuis le site web AUTO EXPERT`
               <CardContent className="p-0 flex flex-col flex-grow">
                 <div className="relative h-56">
                   <Image
-                    src="/images/voiture-accident-rachat-voiture-belgique.jpg"
+                    src="/images/voiture-accident-rachat-voiture-belgique.jpeg"
                     alt="Voiture accidentée"
                     fill
                     className="object-cover"
@@ -1025,7 +1026,7 @@ Message envoyé depuis le site web AUTO EXPERT`
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             <div>
-              <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">AUTO EXPERT</h3>
+              <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Rachat Voiture Direct</h3>
               <p className="text-base sm:text-lg text-gray-200">
                 Votre partenaire de confiance pour l'achat et la vente de véhicules en Belgique.
               </p>
@@ -1059,7 +1060,7 @@ Message envoyé depuis le site web AUTO EXPERT`
           </div>
 
           <div className="border-t border-gray-500 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-base sm:text-lg text-gray-200">
-            <p>&copy; 2025 Auto Expert. Tous droits réservés.</p>
+            <p>&copy; 2025 Rachat Voiture Direct. Tous droits réservés.</p>
           </div>
         </div>
       </footer>

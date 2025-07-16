@@ -13,9 +13,9 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'Rachat de voiture direct',
+  description: 'Rachat de voiture direct',
+  generator: 'Rachat de voiture direct',
 }
 
 export default function RootLayout({
