@@ -812,7 +812,7 @@ Message envoyé depuis le site web AUTO EXPERT`
           </div>
           <div className="relative min-h-[300px] sm:min-h-[400px] lg:min-h-[600px] order-1 lg:order-2">
             <Image
-              src="/images/peugeot-rachat-belgique.png"
+              src="/images/peugeot-rachat-belgique.jpg"
               alt="Voiture moderne noire"
               fill
               className="object-cover"
@@ -993,21 +993,21 @@ Message envoyé depuis le site web AUTO EXPERT`
                   <MapPin className="w-6 h-6 text-ahmed-blue" />
                   <div>
                     <h4 className="font-bold text-gray-800">Adresse</h4>
-                    <p className="text-gray-600 text-lg">123 Avenue des Voitures, 1000 Bruxelles, Belgique</p>
+                    <p className="text-gray-600 text-2xl">Chaussée de Waterloo 200/8, 1640 Rhode-Saint-Genèse, Belgique</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
                   <Phone className="w-6 h-6 text-ahmed-blue" />
                   <div>
                     <h4 className="font-bold text-gray-800">Téléphone</h4>
-                    <p className="text-gray-600 text-lg">+32 471 38 61 25</p>
+                    <p className="text-gray-600 text-2xl">+32 471 38 61 25</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
                   <Mail className="w-6 h-6 text-ahmed-blue" />
                   <div>
                     <h4 className="font-bold text-gray-800">Email</h4>
-                    <p className="text-gray-600 text-lg">contact@autoexpert.be</p>
+                    <p className="text-gray-600 text-2xl">r.linecars187@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -1052,7 +1052,7 @@ Message envoyé depuis le site web AUTO EXPERT`
               <h4 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">Contact</h4>
               <ul className="space-y-1 sm:space-y-2 text-base sm:text-lg text-gray-200">
                 <li>+32 471 38 61 25</li>
-                <li>contact@autoexpert.be</li>
+                <li>r.linecars187@gmail.com</li>
                 <li>Bruxelles, Belgique</li>
               </ul>
             </div>

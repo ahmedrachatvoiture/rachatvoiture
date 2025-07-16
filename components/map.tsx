@@ -38,8 +38,8 @@ export default function InteractiveMap() {
     function initializeMap() {
       if (!mapRef.current || mapInstanceRef.current) return
 
-      // Initialiser la carte centrée sur Bruxelles
-      const map = window.L.map(mapRef.current).setView([50.8503, 4.3517], 13)
+      // Initialiser la carte centrée sur la nouvelle adresse
+      const map = window.L.map(mapRef.current).setView([50.7553, 4.3534], 15)
       mapInstanceRef.current = map
 
       // Ajouter les tuiles OpenStreetMap
@@ -74,7 +74,7 @@ export default function InteractiveMap() {
       })
 
       // Ajouter le marqueur avec popup
-      window.L.marker([50.8503, 4.3517], { icon: customIcon })
+      window.L.marker([50.7553, 4.3534], { icon: customIcon })
         .addTo(map)
         .bindPopup(
           `
@@ -95,10 +95,10 @@ export default function InteractiveMap() {
               🚗 AUTO EXPERT
             </div>
             <div style="color: #6b7280; margin-bottom: 5px;">
-              📍 123 Avenue des Voitures
+              📍 Chaussée de Waterloo 200/8
             </div>
             <div style="color: #6b7280; margin-bottom: 10px;">
-              1000 Bruxelles, Belgique
+              1640 Rhode-Saint-Genèse, Belgique
             </div>
             <div style="margin-top: 10px;">
               <a href="tel:+32471386125" style="
@@ -114,7 +114,7 @@ export default function InteractiveMap() {
               </a>
             </div>
             <div style="margin-top: 8px;">
-              <a href="https://www.openstreetmap.org/directions?from=&to=50.8503%2C4.3517" 
+              <a href="https://www.openstreetmap.org/directions?from=&to=50.7553%2C4.3534" 
                  target="_blank" 
                  style="
                    color: #059669; 
