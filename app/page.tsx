@@ -264,7 +264,7 @@ Message envoyé depuis le site web Rachat Voiture Direct`
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div className="text-white order-2 lg:order-1">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight">
-                VENDEZ VOTRE VOITURE AU MEILLEUR PRIX!
+                VENDEZ VOTRE VOITURE AU MEILLEUR PRIX DEPUIS CHEZ VOUS, C'EST POSSIBLE !
               </h1>
               <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 leading-relaxed">
                 Grâce à notre plateforme en ligne, vous obtenez une estimation GRATUITE en quelques minutes, sans

@@ -92,7 +92,7 @@ export default function InteractiveMap() {
               border-bottom: 2px solid #f59e0b;
               padding-bottom: 5px;
             ">
-              🚗 AUTO EXPERT
+              🚗 RACHAT VOITURE DIRECT
             </div>
             <div style="color: #6b7280; margin-bottom: 5px;">
               📍 Chaussée de Waterloo 200/8
