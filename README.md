@@ -1,30 +1,56 @@
-# French website design
+```markdown
+# Guide d’installation et de démarrage
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+## Prérequis
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/nissim-djerroudis-projects-9c95094d/v0-french-website-design)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/KfF6rFIqjQN)
+Avant de commencer, assurez-vous d’avoir installé sur votre machine :
+- **Node.js** (version 18 ou plus recommandée) : [Télécharger Node.js](https://nodejs.org/)
+- **npm** (inclus avec Node.js) ou **yarn** (optionnel).
 
-## Overview
+## Installation du projet
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+1. **Cloner le projet**  
+   Téléchargez le projet ou clonez-le via Git :  
+   ```bash
+   git clone [URL_DU_PROJET]
+   ```
 
-## Deployment
+2. **Accéder au dossier du projet**  
+   ```bash
+   cd [NOM_DU_DOSSIER]
+   ```
 
-Your project is live at:
+3. **Installer les dépendances**  
+   ```bash
+   npm install
+   ```
+   ou si vous utilisez **yarn** :  
+   ```bash
+   yarn
+   ```
 
-**[https://vercel.com/nissim-djerroudis-projects-9c95094d/v0-french-website-design](https://vercel.com/nissim-djerroudis-projects-9c95094d/v0-french-website-design)**
+## Lancer le projet en local
 
-## Build your app
+Une fois l’installation terminée, lancez le serveur de développement :
+```bash
+npm run dev
+```
+ou avec **yarn** :  
+```bash
+yarn dev
+```
 
-Continue building your app on:
+Le projet sera disponible à l’adresse :  
+[http://localhost:3000](http://localhost:3000)
 
-**[https://v0.dev/chat/projects/KfF6rFIqjQN](https://v0.dev/chat/projects/KfF6rFIqjQN)**
+## Construire le projet (mode production)
 
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Pour créer une version optimisée du site :
+```bash
+npm run build
+```
+Puis lancer le serveur de production :
+```bash
+npm start
+```
+```
